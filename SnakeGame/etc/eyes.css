@@ -1,0 +1,36 @@
+.eye{
+	width: 90px;
+	height: 20px;
+	border-radius: 100%;
+	background-color: #82781e;
+	display: flex; /* This will make the parent div a flex container */
+  	justify-content: center; /* This will horizontally center the child div */
+  	align-items: center; /* This will vertically center the child div */
+  	animation: blink 3s ease-in-out infinite;
+  	transform: rotate(10deg);
+}
+#tilt{
+	transform: rotate(-10deg);	
+}
+.iris{
+	height: 19px;
+	width: 5px;
+	border-radius: 100%;
+	background-color: black;
+}
+.align{
+	display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+}
+
+@keyframes blink{
+	0%{
+		background-color: #82781e;
+	}50%{
+		background-color: black;
+	}100%{
+		background-color: #82781e;
+	}
+}
